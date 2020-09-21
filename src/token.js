@@ -80,8 +80,9 @@ function updateTKK(opts) {
         if (Number(window.TKK.split('.')[0]) === now) {
             resolve();
         } else {
+            var browersUrl = 'https://cors-anywhere.herokuapp.com/';
             axios({
-                url: 'https://translate.google.' + opts.tld,
+                url: browersUrl + 'https://translate.google.' + opts.tld,
                 proxy: opts.proxy,
             }).then(function (res) {
                 var matches = res.data.match(/tkk:\s?'(.+?)'/i);
