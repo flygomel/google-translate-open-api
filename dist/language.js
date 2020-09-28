@@ -23,6 +23,7 @@ var langs = {
     Catalan: "ca",
     Cebuano: "ceb",
     Chichewa: "ny",
+    Chinese: "zh",
     "Chinese Simplified": "zh-cn",
     "Chinese Traditional": "zh-tw",
     Corsican: "co",
